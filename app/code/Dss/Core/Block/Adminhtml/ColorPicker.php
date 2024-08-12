@@ -2,6 +2,20 @@
 
 declare(strict_types= 1);
 
+/**
+ * Digit Software Solutions..
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ *
+ * @category   Dss
+ * @package    Dss_DisableCompare
+ * @author     Extension Team
+ * @copyright Copyright (c) 2024 Digit Software Solutions. ( https://digitsoftsol.com )
+ */
+
 namespace Dss\Core\Block\Adminhtml;
 
 use Magento\Config\Block\System\Config\Form\Field;
@@ -24,7 +38,11 @@ class ColorPicker extends Field
         $value = $element->getData('value');
 
         $html .= '<script>
-            require(["jquery", "jquery/colorpicker/js/colorpicker", "domReady!"], function ($) {
+            require([
+                "jquery",
+                "jquery/colorpicker/js/colorpicker",
+                "domReady!"
+                ], function ($) {
                 var el = $("#' . $element->getHtmlId() . '");
 
                 el.css("background-color", "#' . $value . '");
