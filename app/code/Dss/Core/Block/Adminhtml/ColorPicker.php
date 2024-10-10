@@ -11,7 +11,7 @@ declare(strict_types= 1);
  * that is bundled with this package in the file LICENSE.txt.
  *
  * @category   Dss
- * @package    Dss_DisableCompare
+ * @package    Dss_Core
  * @author     Extension Team
  * @copyright Copyright (c) 2024 Digit Software Solutions. ( https://digitsoftsol.com )
  */
