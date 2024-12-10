@@ -4,7 +4,7 @@
     <menu>
         <add id="Dss_Core::dss_menu" title="Dss" module="Dss_Core" sortOrder="20" resource="Magento_Backend::content"/>
         <add id="Dss_Core::dss_sub_menu" title="Dss Configration" module="Dss_Core" sortOrder="1"
-            action="admin/system_config/edit/section/dss_config"
+            action="adminhtml/system_config/edit/section/dss_config"
             parent="Dss_Core::dss_menu" resource="Magento_Backend::content"/>
     </menu>
 </config>
