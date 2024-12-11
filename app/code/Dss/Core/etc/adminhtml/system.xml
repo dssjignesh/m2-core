@@ -2,8 +2,42 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="dss" translate="label" sortOrder="10" class="dss-tab">
+        <tab id="dss" translate="label" sortOrder="100" class="dss-tab">
             <label>Dss</label>
         </tab>
+        <section id="dss_config" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1"
+            showInStore="1">
+            <class>dss-separator-top</class>
+            <label><![CDATA[Information &amp; Marketplace]]></label>
+            <tab>dss</tab>
+            <resource>Dss_Core::information</resource>
+            <group id="dss_menu" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="0"
+                showInStore="0">
+                <label><![CDATA[Information]]></label>
+                <comment>
+                    <![CDATA[
+                        <div class="dss-info">
+                            <a href="https://digitsoftsol.com/" target="_blank">
+                                <div class="dss-logo"></div>
+                                Digit Software Solutions
+                            </a>
+                            Copyright © 2024
+                            <a href="https://digitsoftsol.com/contact-us/" target="_blank">Contact us</a>
+                            <a href="mailto:info@digitsoftsol.com">Mail for Support</a>
+                            <a href="#" target="_blank">More Extensions</a>
+                        </div>
+                        <div class="dss-module">
+                            Dss Menu
+                        </div>
+                        <hr />
+                    ]]>
+                </comment>
+                <field id="menu_enable" translate="label comment" type="select" sortOrder="25" showInDefault="1"
+                    showInWebsite="0" showInStore="0">
+                    <label>Enable Dss Menu</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
     </system>
 </config>

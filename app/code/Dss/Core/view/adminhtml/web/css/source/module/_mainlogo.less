@@ -1,3 +1,11 @@
+// Variables
+@primary-color: #1e90ff;
+@border-color: #918c8c;
+@background-color: #eaf5e1;
+@module-color: #40748e;
+@module-highlight: #00f;
+@submenu-color: #a79d95;
+
 .config-nav {
     .dss-tab {
         .admin__page-nav-title {
@@ -44,3 +52,60 @@
     }
 }
 
+.dss-info {
+    background-color: @background-color;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+
+    .dss-logo {
+        background-image: url('@{baseDir}/Dss_Core/images/dss.png');
+        background-position: center;
+        background-size: contain;
+        bottom: -9px;
+        display: inline-block;
+        height: 41px;
+        margin-left: 4px;
+        margin-right: 5px;
+        position: relative;
+        width: 41px;
+    }
+
+    a {
+        border-left: 2px solid @border-color;
+        color: @primary-color;
+        font-weight: bold !important;
+        padding-left: 5px;
+
+        &:first-child {
+            border-left: none;
+            padding-left: 5px;
+        }
+    }
+}
+
+.dss-module {
+    color: @module-color;
+    font-size: 18px;
+    font-weight: 800;
+
+    span {
+        color: @module-highlight;
+    }
+}
+
+.admin__menu {
+    .submenu {
+        .item-zarathemes-askforquote {
+            a {
+                pointer-events: none;
+
+                span {
+                    color: @submenu-color;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
